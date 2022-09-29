@@ -1,9 +1,15 @@
-import './App.css'
+import { BrowserRouter } from 'react-router-dom'
+import { Header } from '@/components/Header'
+import RoutesIndex from '@/routes'
+import '@/App.css'
 
 function App () {
   return (
     <>
-      <h1>Vite + React</h1>
+      <BrowserRouter>
+        <Header />
+        <RoutesIndex />
+      </BrowserRouter>
     </>
   )
 }
