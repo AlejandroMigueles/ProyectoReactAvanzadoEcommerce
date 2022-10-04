@@ -37,7 +37,7 @@ const Login = () => {
           <input
             type='email'
             className='form-control'
-            id='floatingInput'
+            id='floatingEmail'
             name='email'
             value={input.email}
             onChange={handleInputChange}
