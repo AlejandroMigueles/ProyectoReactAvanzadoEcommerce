@@ -4,7 +4,7 @@ import '../pages/pagesStyles/Home.scss'
 
 const Home = () => {
   const dataItem = fetchProducts()
-  console.log(dataItem)
+  // console.log(dataItem) //Los datos de la API
   // Ahora hacemos el destructuring de los datos que nos devuelve el servicio
   return (
     <>
