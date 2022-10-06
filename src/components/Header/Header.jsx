@@ -7,7 +7,7 @@ const Header = () => {
   const { isAuth, logout } = useContext(AuthContext)
   return (
     <nav className='header'>
-      <Link to='/' className='header__logo'>LOGO</Link>
+      <Link to='/' className='header__logo'><img src='https://www.shareicon.net/download/2015/09/27/107953_car_512x512.png' alt='' width={70} /> Delorean Store</Link>
       <ul className='header__nav-list'>
 
         <li className='header__list-item'>
