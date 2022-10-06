@@ -11,9 +11,9 @@ const Home = () => {
       <h1>Home</h1>
       <div className='container center'>
         <div className='img-center'>
-          <img src="https://i.pinimg.com/564x/90/3b/58/903b5830c743ff79e1665fe79aeb5fe6.jpg" alt="" />
+          <img src='https://i.pinimg.com/564x/90/3b/58/903b5830c743ff79e1665fe79aeb5fe6.jpg' alt='' />
         </div>
-        {/* <div className='row'>
+        <div className='row'>
           {dataItem.products.map((item) => (
             <Card
               key={item._id}
@@ -24,7 +24,7 @@ const Home = () => {
             />
           ))}
           <Card />
-        </div> */}
+        </div>
       </div>
     </>
   )

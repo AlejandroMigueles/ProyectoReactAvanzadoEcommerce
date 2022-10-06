@@ -1,3 +1,8 @@
+:root {
+  --detalles:#E6D55C;
+  --main-bg-color: brown;
+  }
+
 .form-signin {
     max-width: 330px;
     padding: 15px;
@@ -18,3 +23,57 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
+  .box {
+    position: relative;
+    width:400px;
+    height: 440px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .box::before{
+    content:'';
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,var(--detalles),var(--detalles));
+    transform-origin:bottom right;
+    animation: animate 6s linear infinite;
+  }
+
+  .box::after{
+    content:'';
+    position: absolute;
+    top:-50%;
+    left: -50%;
+    width: 380px;
+    height: 440px;
+    background: linear-gradient(0deg,transparent,var(--detalles),var(--detalles));
+    transform-origin:bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+  }
+
+  @keyframes animate {
+    0%
+    {
+      transform: rotate(0deg);
+    }
+    100%
+    {
+      transform:rotate(360deg);
+    }
+  }
+
+.form {
+  position: absolute;
+  inset: 3px;
+  border-radius: 8px;
+  background: #28292d;
+  z-index: 10;
+  padding: 50px 40px;
+}

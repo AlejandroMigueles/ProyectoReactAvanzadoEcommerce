@@ -1,4 +1,4 @@
-$darkgray: #3d3d3d;
+$darkgray: #E6D55C;
 
 @mixin header-link ($hover: true){
     color: $darkgray;
@@ -20,6 +20,7 @@ $darkgray: #3d3d3d;
     align-items: center;
     padding: 15px 30px;
     font-size: 20px;
+    font-weight: bold;
 
     &__logo {
         @include header-link(false);
@@ -35,7 +36,7 @@ $darkgray: #3d3d3d;
         @include header-link(true);
         
         &--is-active {
-            border-bottom: solid 2px $darkgray;
+            border-bottom: solid 2px #998F45;
         }
     }
 }

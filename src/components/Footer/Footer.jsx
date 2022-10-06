@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.scss'
+import { FaFacebook, FaTwitter, FaGoogle, FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const
   Footer = () => {
@@ -10,25 +11,25 @@ const
           {/* Section: Social media */}
           <section className='mb-4'>
             {/* Facebook */}
-            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><i className='fab fa-facebook-f' /></a>
+            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><FaFacebook /></a>
             {/* Twitter */}
-            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><i className='fab fa-twitter' /></a>
+            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><FaTwitter /></a>
             {/* Google */}
-            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><i className='fab fa-google' /></a>
+            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><FaGoogle /></a>
             {/* Instagram */}
-            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><i className='fab fa-instagram' /></a>
+            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><FaInstagram /></a>
             {/* Linkedin */}
-            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><i className='fab fa-linkedin-in' /></a>
+            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><FaLinkedin /></a>
             {/* Github */}
-            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><i className='fab fa-github' /></a>
+            <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'><FaGithub /></a>
           </section>
           {/* Section: Social media */}
         </div>
         {/* Grid container */}
         {/* Copyright */}
         <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-          © 2020 Copyright:
-          <a className='text-white' href='https://mdbootstrap.com/'>MDBootstrap.com</a>
+          © 2022 Copyright:
+          <a className='text-white'> Alejandro Migueles</a>
         </div>
         {/* Copyright */}
       </footer>

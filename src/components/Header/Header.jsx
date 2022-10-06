@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { AuthContext } from '@/context/AuthContext'
 import { Link } from 'react-router-dom'
+import { FaSearch } from 'react-icons/fa'
 import './Header.scss'
 
 const Header = () => {
@@ -49,6 +50,11 @@ const Header = () => {
         }
 
       </ul>
+      <form className='d-flex'>
+        <input className='form-control me-sm-2' type='text' placeholder='Search' />
+        <button className='btn btn-secondary my-2 my-sm-0' type='submit'><FaSearch /></button>
+      </form>
+
     </nav>
   )
 }

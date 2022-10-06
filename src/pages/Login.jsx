@@ -5,7 +5,6 @@ import { loginUserService } from '@/services/userServices'
 import { AuthContext } from '@/context/AuthContext'
 import logo from '@/assets/react.svg'
 import '@/assets/css/form.css'
-import { Footer } from '../components/Footer'
 
 const Login = () => {
   const { loginUser } = useContext(AuthContext)
@@ -29,10 +28,9 @@ const Login = () => {
   })
 
   return (
-    <>
-      <main className='form-signin w-100 m-auto'>
-        <form onSubmit={handleSubmit}>
-          <img className='mb-4' src={logo} alt='' width='72' height='57' />
+    <div>
+      <main className='form-signin w-100 m-auto box'>
+        <form onSubmit={handleSubmit} className='form'>
           <h1 className='h3 mb-3 fw-normal'>Please sign in</h1>
 
           <div className='form-floating'>
@@ -64,7 +62,7 @@ const Login = () => {
           <p className='mt-5 mb-3 text-muted'>© 2017–2022</p>
         </form>
       </main>
-    </>
+    </div>
   )
 }
 export default Login
