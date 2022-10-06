@@ -3,6 +3,7 @@ import { useContext } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Home, Login, Secret, Signup, Dashboard } from '@/pages'
 import { AuthContext } from '../context/AuthContext'
+import { SingleItem } from '@/components/SingleItem'
 
 const RoutesIndex = () => {
   const { isAuth } = useContext(AuthContext)
@@ -17,6 +18,7 @@ const RoutesIndex = () => {
         path='/dashboard'
         element={isAuth ? <Dashboard /> : <Navigate to='/login' replace />}
       />
+      <Route path='/product/:id' element={SingleItem} />
     </Routes>
 
   )
