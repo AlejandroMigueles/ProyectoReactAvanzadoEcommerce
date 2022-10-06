@@ -5,7 +5,7 @@ import './Card.scss'
 
 const Card = ({ id, title, price, image }) => {
   return (
-    <Link to={`/product/${title}`} className='container col-md-3 mb-2 p-2 '>
+    <Link to={`/product/${id}/${title}`} className='container col-md-3 mb-2 p-2 noLink'>
       <article>
         <div>
           <div className='card box2' style={{ width: '18rem' }}>

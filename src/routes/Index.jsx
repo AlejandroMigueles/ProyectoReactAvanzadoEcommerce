@@ -17,7 +17,7 @@ const RoutesIndex = () => {
         path='/dashboard'
         element={isAuth ? <Dashboard /> : <Navigate to='/login' replace />}
       />
-      <Route path='/product/:title' element={<SingleItem />} />
+      <Route path='/product/:id/:title' element={<SingleItem />} />
     </Routes>
 
   )
