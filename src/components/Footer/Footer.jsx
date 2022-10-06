@@ -5,7 +5,7 @@ import { FaFacebook, FaTwitter, FaGoogle, FaInstagram, FaGithub, FaLinkedin } fr
 const
   Footer = () => {
     return (
-      <footer className='bg-dark text-center text-white position'>
+      <footer className='text-center text-white position'>
         {/* Grid container */}
         <div className='container p-4 pb-0'>
           {/* Section: Social media */}

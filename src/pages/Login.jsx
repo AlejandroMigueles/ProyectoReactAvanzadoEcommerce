@@ -3,7 +3,6 @@ import useForm from '@/hooks/useForm'
 import { useNavigate } from 'react-router-dom'
 import { loginUserService } from '@/services/userServices'
 import { AuthContext } from '@/context/AuthContext'
-import logo from '@/assets/react.svg'
 import '@/assets/css/form.css'
 
 const Login = () => {

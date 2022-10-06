@@ -7,26 +7,23 @@ import './Header.scss'
 const Header = () => {
   const { isAuth, logout } = useContext(AuthContext)
   return (
-    <nav className='header'>
-      <Link to='/' className='header__logo'><img src='https://www.shareicon.net/download/2015/09/27/107953_car_512x512.png' alt='' width={70} /> Delorean Store</Link>
-      <ul className='header__nav-list'>
-
-        <li className='header__list-item'>
-          <Link to='/' className='header__item-link header__item-link--is-active'>Home</Link>
-        </li>
-
-        <li className='header__list-item'>
-          <Link to='/dashboard' className='header__item-link'>Dashboard</Link>
-        </li>
-
-        {
+    <>
+      <nav className='header navbar navbar-expand-lg'>
+        <Link to='/' className='header__logo navbar-brand'><img src='https://www.shareicon.net/download/2015/09/27/107953_car_512x512.png' alt='' width={70} /> Delorean Store</Link>
+        <ul className='header__nav-list'>
+          <li className='header__list-item'>
+            <Link to='/' className='header__item-link header__item-link--is-active'>Home</Link>
+          </li>
+          <li className='header__list-item'>
+            <Link to='/dashboard' className='header__item-link'>Dashboard</Link>
+          </li>
+          {
         !isAuth
           ? (
             <>
               <li className='header__list-item'>
                 <Link to='/login' className='header__item-link'>Login</Link>
               </li>
-
               <li className='header__list-item'>
                 <Link to='/signup' className='header__item-link'>Signup</Link>
               </li>
@@ -48,14 +45,13 @@ const Header = () => {
             </>
             )
         }
-
-      </ul>
-      <form className='d-flex'>
-        <input className='form-control me-sm-2' type='text' placeholder='Search' />
-        <button className='btn btn-secondary my-2 my-sm-0' type='submit'><FaSearch /></button>
-      </form>
-
-    </nav>
+        </ul>
+        <form className='d-flex'>
+          <input className='form-control me-sm-2' type='text' placeholder='Search' />
+          <button className='btn btn-secondary my-2 my-sm-0' type='submit'><FaSearch /></button>
+        </form>
+      </nav>
+    </>
   )
 }
 export default Header
