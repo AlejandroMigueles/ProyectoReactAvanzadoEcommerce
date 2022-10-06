@@ -5,7 +5,7 @@ import './Card.scss'
 
 const Card = ({ id, title, price, image }) => {
   return (
-    <Link to={`product/${id}`} style={{ color: 'inherit', textDecoration: 'inherit' }} className='container col-md-3 mb-2 p-2 '>
+    <Link to={`product/${title}`} style={{ color: 'inherit', textDecoration: 'inherit' }} className='container col-md-3 mb-2 p-2 '>
       <article>
         <div>
           <div className='card box2' style={{ width: '18rem' }}>

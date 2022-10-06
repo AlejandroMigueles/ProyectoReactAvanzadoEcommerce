@@ -25,13 +25,14 @@ const Signup = () => {
 
   return (
     <div>
-      <main className='form-signin w-100 m-auto box'>
+      <main className='form-signin w-100 m-auto boxSignUp'>
         <form onSubmit={handleSubmit} className='form'>
-          <h1 className='h3 mb-3 fw-normal'>Please sign up</h1>
+          <h1 className='h3 mb-3 fw-normal'>Sign Up</h1>
 
-          <div className='form-floating'>
+          <div className='form-floating inputBox'>
             <input
               type='text'
+              required='required'
               className='form-control'
               id='first_name'
               name='first_name'
@@ -40,11 +41,13 @@ const Signup = () => {
               placeholder='John'
             />
             <label htmlFor='first_name'>First Name</label>
+            <i />
           </div>
 
-          <div className='form-floating'>
+          <div className='form-floating inputBox'>
             <input
               type='text'
+              required='required'
               className='form-control'
               id='last_name'
               name='last_name'
@@ -53,6 +56,7 @@ const Signup = () => {
               placeholder='Doe'
             />
             <label htmlFor='last_name'>Last Name</label>
+            <i />
           </div>
 
           {/* <div className='form-floating'>
@@ -70,10 +74,11 @@ const Signup = () => {
             <label htmlFor='gender'>Gender</label>
           </div> */}
 
-          <div className='form-floating'>
+          <div className='form-floating inputBox'>
             <input
               type='email'
               className='form-control'
+              required='required'
               id='email'
               name='email'
               value={input.email}
@@ -81,12 +86,14 @@ const Signup = () => {
               placeholder='name@example.com'
             />
             <label htmlFor='email'>Email address</label>
+            <i />
           </div>
 
-          <div className='form-floating'>
+          <div className='form-floating inputBox'>
             <input
               type='password'
               className='form-control'
+              required='required'
               id='password'
               name='password'
               value={input.password}
@@ -94,10 +101,10 @@ const Signup = () => {
               placeholder='Password'
             />
             <label htmlFor='password'>Password</label>
+            <i />
           </div>
 
           <button className='w-100 btn btn-lg btn-primary' type='submit'>Sign in</button>
-          <p className='mt-5 mb-3 text-muted'>© 2017–2022</p>
         </form>
       </main>
     </div>
