@@ -10,9 +10,11 @@ const config = {
 const registerUserService = (data) => axios.post(`${BASE_URL}/signup`, data)
 const loginUserService = (data) => axios.post(`${BASE_URL}/login`, data)
 const getSingleUser = (id) => axios.get(`${BASE_URL}/user/${id}`, config)
+const getItems = (data) => axios.get(`${BASE_URL}/item`, data)
 
 export {
   registerUserService,
   loginUserService,
-  getSingleUser
+  getSingleUser,
+  getItems
 }
